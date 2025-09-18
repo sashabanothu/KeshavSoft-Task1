@@ -1,0 +1,28 @@
+/* Hero section with background image */
+.hero-about {
+  min-height: 50vh;
+  background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80") 
+              no-repeat center center/cover;
+  position: relative;
+}
+.hero-about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+}
+.hero-about .container {
+  position: relative;
+  z-index: 1;
+}
+/* Split hero section */
+.split-hero img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.timeline-step {
+  background: #f8f9fa;
+  border-left: 4px solid #0d6efd;
+}
+
